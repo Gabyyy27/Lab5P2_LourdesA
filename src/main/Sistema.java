@@ -29,6 +29,7 @@ public class Sistema extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jTabbedPane5 = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
@@ -82,16 +83,19 @@ public class Sistema extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
-        jTabbedPane3 = new javax.swing.JTabbedPane();
-        jTabbedPane11 = new javax.swing.JTabbedPane();
         jScrollPane7 = new javax.swing.JScrollPane();
         jList7 = new javax.swing.JList<>();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        jTabbedPane11 = new javax.swing.JTabbedPane();
 
         jMenu1.setText("jMenu1");
 
         jMenu2.setText("jMenu2");
 
         jMenuItem1.setText("jMenuItem1");
+
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -420,8 +424,6 @@ public class Sistema extends javax.swing.JFrame {
         );
 
         EliminarHeroe.addTab("Agregar", jPanel1);
-        EliminarHeroe.addTab("Modificar", jTabbedPane3);
-        EliminarHeroe.addTab("Eliminar", jTabbedPane11);
 
         jList7.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -431,6 +433,8 @@ public class Sistema extends javax.swing.JFrame {
         jScrollPane7.setViewportView(jList7);
 
         EliminarHeroe.addTab("Listar", jScrollPane7);
+        EliminarHeroe.addTab("Modificar", jTabbedPane3);
+        EliminarHeroe.addTab("Eliminar", jTabbedPane11);
 
         jTabbedPane1.addTab("Super Heroe", EliminarHeroe);
 
@@ -501,6 +505,7 @@ public class Sistema extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane EliminarHeroe;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
